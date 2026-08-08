@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-black: #000000;
+    --bg-white: #ffffff;
+    --bg-dark-gray: #111111;
+    --bg-light-gray: #f2f2f2;
+    --brand-orange: #ff4a0a;
+    --brand-orange-hover: #e03e00;
+    --border-gray: rgba(255, 255, 255, 0.1);
+    --border-gray-light: rgba(0, 0, 0, 0.1);
+  }
+
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-smooth iframe {
+    pointer-events: none;
+  }
+
+  body {
+    background-color: var(--bg-black);
+    color: var(--bg-white);
+    overflow-x: hidden;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv03";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    selection-background-color: var(--brand-orange);
+    selection-color: #ffffff;
+  }
+
+  ::selection {
+    background-color: #ff4a0a;
+    color: #ffffff;
+  }
+}
+
+/* Custom Utilities for 3D Cards & Typography */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-2000 {
+  perspective: 2000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Glassmorphism */
+.glass-panel-dark {
+  background: rgba(17, 17, 17, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Metallic / Card Gradient Effects */
+.card-orange-gradient {
+  background: linear-gradient(135deg, #FF4A0A 0%, #FF6B35 50%, #D83B00 100%);
+}
+
+.card-black-gradient {
+  background: linear-gradient(135deg, #1C1C1E 0%, #0A0A0A 60%, #151517 100%);
+}
+
+.card-gray-gradient {
+  background: linear-gradient(135deg, #E5E5EA 0%, #D1D1D6 100%);
+}
+
+/* Text stroke for oversized footer wordmark */
+.text-stroke-orange {
+  -webkit-text-stroke: 2px #ff4a0a;
+  color: transparent;
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.3);
+  color: transparent;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4a0a;
+}
