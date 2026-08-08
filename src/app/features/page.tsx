@@ -83,7 +83,7 @@ export default function FeaturesPage() {
             <span className="text-[#FF4A0A]">UNRIVALED PRECISION</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-3xl leading-relaxed">
-            Explore Finguard's full suite of automated financial tools, real-time telemetry modules, and bank-grade security protocols.
+            Explore Finguard&apos;s full suite of automated financial tools, real-time telemetry modules, and bank-grade security protocols.
           </p>
 
           {/* Category Filter Pills */}

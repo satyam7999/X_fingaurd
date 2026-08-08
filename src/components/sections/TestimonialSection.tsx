@@ -66,7 +66,7 @@ export default function TestimonialSection() {
                   className="flex flex-col gap-8"
                 >
                   <blockquote className="font-display font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.15] text-zinc-900">
-                    "{current.quote}"
+                    &quot;{current.quote}&quot;
                   </blockquote>
 
                   <div className="flex items-center gap-4 pt-4">

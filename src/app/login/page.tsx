@@ -109,7 +109,7 @@ export default function LoginPage() {
               </button>
             </div>
             <p className="text-xs text-zinc-400 mt-2">
-              Don't have a Finguard account?{' '}
+              Don&apos;t have a Finguard account?{' '}
               <Link href="/signup" className="text-[#FF4A0A] font-bold hover:underline">
                 Sign up here
               </Link>

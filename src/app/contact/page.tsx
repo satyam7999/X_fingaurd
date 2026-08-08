@@ -20,7 +20,7 @@ export default function ContactPage() {
         <div className="flex flex-col items-start gap-6 py-12 border-b border-white/10">
           <Eyebrow variant="orange">GET IN TOUCH</Eyebrow>
           <h1 className="font-display font-black text-5xl sm:text-7xl lg:text-8xl tracking-tighter uppercase leading-[0.9]">
-            LET'S TALK ABOUT YOUR <br />
+            LET&apos;S TALK ABOUT YOUR <br />
             <span className="text-[#FF4A0A]">FINANCIAL FUTURE</span>
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl max-w-3xl leading-relaxed">

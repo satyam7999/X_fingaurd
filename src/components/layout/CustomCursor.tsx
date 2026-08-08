@@ -55,7 +55,7 @@ export default function CustomCursor() {
       width: 16,
       backgroundColor: '#FF4A0A',
       mixBlendMode: 'normal' as const,
-      transition: { type: 'spring', mass: 0.1, stiffness: 800, damping: 30 },
+      transition: { type: 'spring' as const, mass: 0.1, stiffness: 800, damping: 30 },
     },
     hover: {
       x: mousePosition.x - 24,
@@ -64,7 +64,7 @@ export default function CustomCursor() {
       width: 48,
       backgroundColor: 'rgba(255, 74, 10, 0.25)',
       border: '1.5px solid #FF4A0A',
-      transition: { type: 'spring', mass: 0.15, stiffness: 600, damping: 25 },
+      transition: { type: 'spring' as const, mass: 0.15, stiffness: 600, damping: 25 },
     },
     card: {
       x: mousePosition.x - 32,
@@ -73,7 +73,7 @@ export default function CustomCursor() {
       width: 64,
       backgroundColor: '#FFFFFF',
       mixBlendMode: 'difference' as const,
-      transition: { type: 'spring', mass: 0.2, stiffness: 500, damping: 25 },
+      transition: { type: 'spring' as const, mass: 0.2, stiffness: 500, damping: 25 },
     },
   };
 

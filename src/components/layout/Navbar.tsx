@@ -76,7 +76,7 @@ export default function Navbar() {
                     <motion.span
                       layoutId="activeNav"
                       className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#FF4A0A] rounded-full"
-                      transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                      transition={{ type: 'spring' as const, stiffness: 380, damping: 30 }}
                     />
                   )}
                 </Link>

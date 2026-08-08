@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Eyebrow from '@/components/ui/Eyebrow';
 import Button from '@/components/ui/Button';
 import { ArrowLeft, Clock, Calendar, Share2, Bookmark } from 'lucide-react';
-import { blogPosts } from '../page';
+import { blogPosts } from '@/data/blogPosts';
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -72,7 +72,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           </p>
 
           <blockquote className="my-6 p-8 rounded-3xl bg-[#111111] border-l-4 border-[#FF4A0A] font-display font-bold text-xl md:text-2xl text-white uppercase italic">
-            "Automated liquidity sweeps ensure that uninvested cash never sits idle, compounding yield every single second."
+            &quot;Automated liquidity sweeps ensure that uninvested cash never sits idle, compounding yield every single second.&quot;
           </blockquote>
 
           <h2 className="font-display font-bold text-2xl md:text-3xl text-white uppercase mt-6 tracking-tight">

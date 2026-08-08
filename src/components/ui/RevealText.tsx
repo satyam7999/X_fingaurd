@@ -32,7 +32,7 @@ export default function RevealText({
       y: 0,
       filter: 'blur(0px)',
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         damping: 18,
         stiffness: 100,
       },

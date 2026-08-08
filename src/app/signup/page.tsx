@@ -138,7 +138,7 @@ export default function SignupPage() {
             <div className="flex items-center gap-2 my-1">
               <input type="checkbox" required id="terms" className="accent-[#FF4A0A] rounded w-4 h-4 cursor-pointer" />
               <label htmlFor="terms" className="text-xs text-zinc-400 cursor-pointer">
-                I agree to Finguard's <Link href="/security" className="text-white hover:underline">Terms of Service</Link> & <Link href="/security" className="text-white hover:underline">Privacy Policy</Link>
+                I agree to Finguard&apos;s <Link href="/security" className="text-white hover:underline">Terms of Service</Link> & <Link href="/security" className="text-white hover:underline">Privacy Policy</Link>
               </label>
             </div>
 

@@ -43,7 +43,7 @@ export default function MagneticButton({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       animate={{ x: position.x, y: position.y }}
-      transition={{ type: 'spring', stiffness: 350, damping: 20, mass: 0.5 }}
+      transition={{ type: 'spring' as const, stiffness: 350, damping: 20, mass: 0.5 }}
       onClick={onClick}
       className={`inline-block cursor-pointer ${className}`}
     >
